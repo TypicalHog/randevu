@@ -2,7 +2,7 @@ use blake3::hash;
 use chrono::{Duration, Utc};
 use std::collections::HashSet;
 use std::fs::File;
-use std::io::{BufRead, BufReader, Write};
+use std::io::{self, BufRead, BufReader, Write};
 use std::path::Path;
 
 struct Item {
@@ -101,4 +101,9 @@ fn main() {
             }
         }
     }
+
+    let mut input = String::new();
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
 }
