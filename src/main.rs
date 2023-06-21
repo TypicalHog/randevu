@@ -87,11 +87,11 @@ fn main() {
 
     let mut printed_dates: HashSet<String> = HashSet::new();
 
-    for i in -1..2 {
-        let date = utc_date_string_with_offset(i);
+    for i in 0..3 {
+        let date = utc_date_string_with_offset(i - 1);
 
         if printed_dates.insert(date.clone()) {
-            println!("{}", date);
+            println!("UTC {}", date);
         }
 
         for item in &items {
