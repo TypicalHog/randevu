@@ -21,9 +21,9 @@ fn load_items() -> Vec<Item> {
             let parts: Vec<&str> = item_data.split(' ').collect();
             if parts.len() == 2 {
                 if let Ok(value) = parts[1].trim().parse::<i32>() {
-                    let sanitized_name = sanitize_string(parts[0].trim());
+                    //let sanitized_name = sanitize_string(parts[0].trim());
                     let item = Item {
-                        name: sanitized_name,
+                        name: parts[0].trim().to_owned(),
                         value,
                     };
                     items.push(item);
@@ -35,14 +35,14 @@ fn load_items() -> Vec<Item> {
     items
 }
 
-fn sanitize_string(str: &str) -> String {
+/*fn sanitize_string(str: &str) -> String {
     let filtered: String = str
         .chars()
         .filter(|c| c.is_ascii_alphanumeric() && !c.is_whitespace())
         .collect();
 
     filtered.to_uppercase()
-}
+}*/
 
 fn utc_date_string_with_offset(offset: i64) -> String {
     let today = Utc::now();
