@@ -30,7 +30,7 @@ on a given day and N is a user set number loaded from the file
 Randevu for an item is only shown for items where M >= N.
 
 Proposal:
-https://www.reddit.com/r/Lightbulb/comments/14eqqa8/universal_daily_deterministic_pseudorandom/
+https://www.reddit.com/r/Lightbulb/comments/14eqqa8/universal_daily_deterministic_pseudorandom
 
 Discussion:
 https://www.reddit.com/r/randevu
