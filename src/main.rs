@@ -7,7 +7,7 @@ use std::path::Path;
 
 struct Item {
     name: String,
-    value: i32,
+    value: u32,
 }
 
 fn load_items() -> Vec<Item> {
@@ -20,7 +20,7 @@ fn load_items() -> Vec<Item> {
         if let Ok(item_data) = line {
             let parts: Vec<&str> = item_data.split(' ').collect();
             if parts.len() == 2 {
-                if let Ok(value) = parts[1].trim().parse::<i32>() {
+                if let Ok(value) = parts[1].trim().parse::<u32>() {
                     //let sanitized_name = sanitize_string(parts[0].trim());
                     let item = Item {
                         name: parts[0].trim().to_owned(),
@@ -73,7 +73,7 @@ fn randevu(item: &str, date: &str) -> u32 {
 }
 
 fn main() {
-    println!("randevu v0.1.2");
+    println!("randevu v0.1.3");
     println!("https://github.com/TypicalHog/randevu\n");
 
     let filename = "RANDEVU.randevu";
@@ -97,8 +97,15 @@ fn main() {
 
         for item in &items {
             let result = randevu(&item.name, &date);
-            if result >= (item.value as i32).try_into().unwrap() {
-                println!("    {} {}/{}", item.name, result, item.value);
+            if result >= item.value.try_into().unwrap() {
+                println!(
+                    "    {} {}/{} {}/{}",
+                    item.name,
+                    result,
+                    item.value,
+                    2u64.pow(result),
+                    2u64.pow(item.value.try_into().unwrap())
+                );
             }
         }
     }

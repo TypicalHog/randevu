@@ -14,9 +14,9 @@ or ones that contain other symbols and characters, like YOUTUBE links.
 
 N is an integer 0 and up. It represents the desired randevu level.
 N = 5 would mean the user would get reminders for a specific item every 32 (2^5) days, on average.
-2^N = average number of days between randevus of level N for an item
+2^N = average number of days between randevus of level N for an item (can vary)
 1 / 2^N = probability a randevu of level N will occur for an item on any given day
-N = 0 is always active while any other level is probabilistic.
+N = 0 is always active while any other level N is probabilistic.
 
 Run the program each day to see which items have a randevu that day.
 Even though the program runs offline, all users will get the same outputs
