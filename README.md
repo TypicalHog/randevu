@@ -1,6 +1,8 @@
 # randevu (prototype)
 Universal daily deterministic probabilistic pseudorandom offline reminders for anything
 
+https://github.com/TypicalHog/randevu
+
 Open "RANDEVU.randevu" in a text editor to add/remove/edit items,
 if it doesn't exist, it will be created on the first run of the program.
 Each line represents one item and should be in the format: "ID N\n"

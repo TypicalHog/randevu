@@ -73,7 +73,8 @@ fn randevu(item: &str, date: &str) -> u32 {
 }
 
 fn main() {
-    println!("RANDEVU v0.1.2\n");
+    println!("randevu v0.1.2");
+    println!("https://github.com/TypicalHog/randevu\n");
 
     let filename = "RANDEVU.randevu";
 
