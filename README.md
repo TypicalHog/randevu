@@ -28,3 +28,6 @@ Randevus are shown to the user in the format:
 "ID M/N" where M is the highest randevu for a certain item
 on a given day and N is a user set number loaded from the file
 Randevu for an item is only shown for items where M >= N.
+
+Proposal and discussion:
+https://www.reddit.com/r/Lightbulb/comments/14eqqa8/universal_daily_deterministic_pseudorandom/
