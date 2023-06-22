@@ -4,6 +4,7 @@ Universal daily deterministic probabilistic pseudorandom offline reminders for a
 Open RANDEVU.randevu in a text editor to add/remove/edit items.
 File will be created on first run if it doesn't exist.
 Each line represents one item and should be in the format: "ID N\n"
+Empty and invalid lines will be ignored.
 
 ID is a string (uppercase A-Z, digits 0-9, no spaces or any other characters).
 Other characters should only be used for case sensitive identifiers,
