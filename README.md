@@ -29,7 +29,7 @@ Randevus are shown to the user in the format:
 on a given day and N is a user set number loaded from the file
 Randevu for an item is only shown for items where M >= N.
 
-Idea / proposal:
+Proposal:
 https://www.reddit.com/r/Lightbulb/comments/14eqqa8/universal_daily_deterministic_pseudorandom/
 
 Discussion:
