@@ -3,7 +3,7 @@ Universal daily deterministic probabilistic pseudorandom offline reminders for a
 
 https://github.com/TypicalHog/randevu
 
-Open "RANDEVU.randevu" in a text editor to add/remove/edit items,
+Open "RANDEVU.rdv" in a text editor to add/remove/edit items,
 if it doesn't exist, it will be created on the first run of the program.
 Each line represents one item and should be in the format: "ID N\n"
 Empty lines, IDs with spaces and any other invalid values will be ignored.

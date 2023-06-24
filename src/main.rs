@@ -11,7 +11,7 @@ struct Item {
 }
 
 fn load_items() -> Vec<Item> {
-    let file_path = Path::new("RANDEVU.randevu");
+    let file_path = Path::new("RANDEVU.rdv");
     let file = File::open(file_path).expect("Failed to open file");
     let reader = BufReader::new(file);
     let mut items = Vec::new();
@@ -76,7 +76,7 @@ fn main() {
     println!("randevu v0.1.3");
     println!("https://github.com/TypicalHog/randevu\n");
 
-    let filename = "RANDEVU.randevu";
+    let filename = "RANDEVU.rdv";
 
     if !Path::new(filename).exists() {
         let mut file = File::create(filename).expect("Failed to create file");
