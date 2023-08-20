@@ -1,4 +1,4 @@
-use blake3::hash;
+use blake3;
 use chrono::{Duration, Utc};
 use std::collections::HashSet;
 use std::fs::File;
@@ -44,32 +44,26 @@ fn load_items() -> Vec<Item> {
     filtered.to_uppercase()
 }*/
 
-fn utc_date_string_with_offset(offset: i64) -> String {
-    let today = Utc::now();
-    let target_date = today + Duration::days(offset);
-    target_date.format("%Y-%m-%d").to_string()
+fn utc_date_with_offset(offset: i64) -> String {
+    let date = Utc::now().date_naive() + Duration::days(offset);
+    date.format("%Y-%m-%d").to_string()
 }
 
-fn randevu(item: &str, date: &str) -> u32 {
-    let item_hash = hash(item.as_bytes());
-    let date_hash = hash(date.as_bytes());
+pub fn rdv(object: &str, date: &str) -> u32 {
+    let mut hasher = blake3::Hasher::new();
+    hasher.update(blake3::hash(object.as_bytes()).as_bytes());
+    hasher.update(blake3::hash(date.as_bytes()).as_bytes());
+    let final_hash = hasher.finalize();
 
-    let mut concatenated = [0u8; 64];
-    concatenated[..32].copy_from_slice(item_hash.as_bytes());
-    concatenated[32..].copy_from_slice(date_hash.as_bytes());
-    let final_hash = hash(concatenated.as_slice());
-
-    let mut randevu_level = 0;
-    for byte in final_hash.as_bytes() {
-        if *byte == 0 {
-            randevu_level += 8;
-        } else {
-            randevu_level += byte.leading_zeros();
+    let mut rdv = 0;
+    for &byte in final_hash.as_bytes() {
+        rdv += byte.leading_zeros();
+        if byte != 0 {
             break;
         }
     }
 
-    randevu_level
+    rdv
 }
 
 fn main() {
@@ -89,14 +83,14 @@ fn main() {
     let mut printed_dates: HashSet<String> = HashSet::new();
 
     for i in 0..3 {
-        let date = utc_date_string_with_offset(i - 1);
+        let date = utc_date_with_offset(i - 1);
 
         if printed_dates.insert(date.clone()) {
             println!("UTC {}", date);
         }
 
         for item in &items {
-            let result = randevu(&item.name, &date);
+            let result = rdv(&item.name, &date);
             if result >= item.value.try_into().unwrap() {
                 println!(
                     "    {} {}/{} {}/{}",
