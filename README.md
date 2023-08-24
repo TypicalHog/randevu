@@ -5,7 +5,7 @@ https://github.com/TypicalHog/randevu
 
 - OFFLINE - no internet connection required
 - FOSS - in public domain
-- DAILY - reminders are generated for each UTC date
+- DAILY - reminders are generated each UTC date
 - DETERMINISTIC - reproducible for any object on any date
 - PSEUDORANDOM - reminders are spaced randomly and uniformly
 - PROBABILISTIC - reminders are calculated using the probabilistic algorithm
