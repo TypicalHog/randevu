@@ -24,7 +24,7 @@ Characters outside of this set should only be used for case sensitive external i
 or ones that contain other symbols and characters, like YOUTUBE links.
 
 EXAMPLES:
->XONOTIC
+>XONOTIC (only uppercase)
 >
 >THE_MATRIX_1999 (movies should have a year at the end)
 >
