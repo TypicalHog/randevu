@@ -45,11 +45,13 @@ You could append certain items with some extra characters to get completely diff
 WEED, Weed, WEED1, WEED_ and WEED420 are all treated as different objects.
 Think of the object IDs like passwords. Same password gets you the same reminders as other people.
 
+
 N is an integer 0 and up. It represents the desired randevu level.
 N = 5 would mean the user would get reminders for a specific item every 32 (2^5) days, on average.
 2^N = average number of days between randevus of level N for an item (can vary)
 1 / 2^N = probability a randevu of level N will occur for an item on any given day
 N = 0 is always active while any other level N is probabilistic.
+
 
 Run the program each day to see which items have a randevu that day.
 Even though the program runs offline, all users will get the same outputs
@@ -57,10 +59,12 @@ for the same items on the same days as long as they enter the same ID and N.
 Every reminder with level N also always lands on the same days as any lower level
 reminders. For example: randevu 4 is on the same days as 3, 2, 1, 0. (for the same ID)
 
+
 Randevus are shown to the user in the format:
 "ID M/N" where M is the highest randevu for a certain item
 on a given day and N is a user set number loaded from the file
 Randevu for an item is only shown for items where M >= N.
+
 
 Proposal:
 https://www.reddit.com/r/Lightbulb/comments/14eqqa8/universal_daily_deterministic_pseudorandom
