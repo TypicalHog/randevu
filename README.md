@@ -41,7 +41,7 @@ Why tho? you may ask.
 **To make sure we all get the same reminders for the same objects.**
 
 Even just a single character that's different causes the system to generate completely different reminders.
-You could append certain items with some extra characters to get completely different and unrelated reminders from other people.
+You could append certain items with some extra characters to get completely different and unrelated reminders from other people, if you really wanted that.
 WEED, Weed, WEED1, WEED_ and WEED420 are all treated as different objects.
 Think of the object IDs like passwords. Same password gets you the same reminders as other people.
 
