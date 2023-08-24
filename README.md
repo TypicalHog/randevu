@@ -3,6 +3,14 @@ Universal Daily Probabilistic Offline Reminders for Anything
 
 https://github.com/TypicalHog/randevu
 
+- OFFLINE - no internet connection required
+- FOSS (PUBLIC DOMAIN)
+- DAILY - reminders are generated for each UTC date
+- DETERMINISTIC (PSEUDORANDOM)
+- PROBABILISTIC - reminders are calculated using the probabilistic algorithm
+- UNIVERSAL - reminders for the same object are the same for everyone
+- GENERIC - applicable to anything and everything
+
 Open "RANDEVU.rdv" in a text editor to add/remove/edit items,
 if it doesn't exist, it will be created on the first run of the program.
 Each line represents one item and should be in the format: "ID N\n"
