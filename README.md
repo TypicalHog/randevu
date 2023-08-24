@@ -39,6 +39,7 @@ EXAMPLES:
 Why tho? you may ask.
 
 **To make sure we all get the same reminders for the same objects.**
+
 Even just a single character that's different causes the system to generate completely different reminders.
 You could append certain items with some extra characters to get completely different and unrelated reminders from other people.
 WEED, Weed, WEED1, WEED_ and WEED420 are all treated as different objects.
