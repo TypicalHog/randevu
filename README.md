@@ -1,5 +1,5 @@
 # randevu (prototype)
-Universal daily deterministic probabilistic pseudorandom offline reminders for anything
+Universal Daily Probabilistic Offline Reminders for Anything
 
 https://github.com/TypicalHog/randevu
 
