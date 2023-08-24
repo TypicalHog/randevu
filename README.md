@@ -30,11 +30,11 @@ EXAMPLES:
 >
 >GRAND_THEFT_AUTO_5 (full name, roman numerals should be replaced with arabic ones)
 >
->ASAP_ROCKY ($ should be replaced with S)
+>ASAP_ROCKY ($ should be replaced with S, same for other similar instances)
 >
->NO_MANS_SKY (apostrophe in "Man's" should be dropped)
+>NO_MANS_SKY (apostrophe in MAN'S should be dropped)
 >
->HARRY_POTTER_SMOKES_WEED_Cdfkq2Nmb3c (video ID should be appended to the video title)
+>HARRY_POTTER_SMOKES_WEED_Cdfkq2Nmb3c (video ID should be appended to the video title, double underscore is fine if the ID starts with one)
 
 Why tho? you may ask.
 **To make sure we all get the same reminders for the same objects.**
