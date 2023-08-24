@@ -5,44 +5,34 @@ use std::fs::File;
 use std::io::{self, BufRead, BufReader, Write};
 use std::path::Path;
 
-struct Item {
+struct Object {
     name: String,
     value: u32,
 }
 
-fn load_items() -> Vec<Item> {
+fn load_objects() -> Vec<Object> {
     let file_path = Path::new("RANDEVU.rdv");
     let file = File::open(file_path).expect("Failed to open file");
     let reader = BufReader::new(file);
-    let mut items = Vec::new();
+    let mut objects = Vec::new();
 
     for line in reader.lines() {
-        if let Ok(item_data) = line {
-            let parts: Vec<&str> = item_data.split(' ').collect();
+        if let Ok(object_data) = line {
+            let parts: Vec<&str> = object_data.split(' ').collect();
             if parts.len() == 2 {
                 if let Ok(value) = parts[1].trim().parse::<u32>() {
-                    //let sanitized_name = sanitize_string(parts[0].trim());
-                    let item = Item {
+                    let object = Object {
                         name: parts[0].trim().to_owned(),
-                        value,
+                        value: value,
                     };
-                    items.push(item);
+                    objects.push(object);
                 }
             }
         }
     }
 
-    items
+    objects
 }
-
-/*fn sanitize_string(str: &str) -> String {
-    let filtered: String = str
-        .chars()
-        .filter(|c| c.is_ascii_alphanumeric() && !c.is_whitespace())
-        .collect();
-
-    filtered.to_uppercase()
-}*/
 
 fn utc_date_with_offset(offset: i64) -> String {
     let date = Utc::now().date_naive() + Duration::days(offset);
@@ -78,7 +68,7 @@ fn main() {
             .expect("Failed to write to file");
     }
 
-    let items = load_items();
+    let objects = load_objects();
 
     let mut printed_dates: HashSet<String> = HashSet::new();
 
@@ -89,16 +79,16 @@ fn main() {
             println!("UTC {}", date);
         }
 
-        for item in &items {
-            let result = rdv(&item.name, &date);
-            if result >= item.value.try_into().unwrap() {
+        for object in &objects {
+            let result = rdv(&object.name, &date);
+            if result >= object.value.try_into().unwrap() {
                 println!(
                     "    {} {}/{} {}/{}",
-                    item.name,
+                    object.name,
                     result,
-                    item.value,
+                    object.value,
                     2u64.pow(result),
-                    2u64.pow(item.value.try_into().unwrap())
+                    2u64.pow(object.value.try_into().unwrap())
                 );
             }
         }
