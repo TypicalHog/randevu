@@ -37,6 +37,7 @@ EXAMPLES:
 >HARRY_POTTER_SMOKES_WEED_Cdfkq2Nmb3c (video ID should be appended to the video title, double underscore is fine if the ID starts with one)
 
 Why tho? you may ask.
+
 **To make sure we all get the same reminders for the same objects.**
 Even just a single character that's different causes the system to generate completely different reminders.
 You could append certain items with some extra characters to get completely different and unrelated reminders from other people.
