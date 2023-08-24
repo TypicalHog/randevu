@@ -18,9 +18,30 @@ if it doesn't exist, it will be created on the first run of the program.
 Each line represents one item and should be in the format: "ID N\n"
 Empty lines, IDs with spaces and any other invalid values will be ignored.
 
-ID is a string (uppercase A-Z, 0-9). No spaces or any other characters.
+ID is a string (preferably uppercase A-Z, 0-9). No spaces allowed.
+Spaces and any other characters should be replaced with a single underscore "_".
 Characters outside of this set should only be used for case sensitive external identifiers,
 or ones that contain other symbols and characters, like YOUTUBE links.
+
+EXAMPLES:
+>XONOTIC
+>
+>THE_MATRIX_1999 (movies should have a year at the end)
+>
+>GRAND_THEFT_AUTO_5 (full name, roman numerals should be replaced with arabic ones)
+>
+>ASAP_ROCKY ($ should be replaced with S)
+>
+>NO_MANS_SKY (apostrophe in "Man's" should be dropped)
+>
+>HARRY_POTTER_SMOKES_WEED_Cdfkq2Nmb3c (video ID should be appended to the video title)
+
+Why tho? you may ask.
+**To make sure we all get the same reminders for the same objects.**
+Even just a single character that's different causes the system to generate completely different reminders.
+You could append certain items with some extra characters to get completely different and unrelated reminders from other people.
+WEED, Weed, WEED1, WEED_ and WEED420 are all treated as different objects.
+Think of the object IDs like passwords. Same password gets you the same reminders as other people.
 
 N is an integer 0 and up. It represents the desired randevu level.
 N = 5 would mean the user would get reminders for a specific item every 32 (2^5) days, on average.
