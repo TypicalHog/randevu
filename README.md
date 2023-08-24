@@ -7,7 +7,7 @@ https://github.com/TypicalHog/randevu
 - FOSS - in public domain
 - DAILY - reminders are generated for each UTC date
 - DETERMINISTIC - reproducible for any object on any date
-- PSEUDORANDOM - reminders are spaced randomly
+- PSEUDORANDOM - reminders are spaced randomly and uniformly
 - PROBABILISTIC - reminders are calculated using the probabilistic algorithm
 - UNIVERSAL - reminders for the same object are the same for everyone
 - GENERIC - applicable to anything and everything
