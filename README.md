@@ -40,7 +40,7 @@ EXAMPLES:
 >
 >HARRY_POTTER_SMOKES_WEED_Cdfkq2Nmb3c (video ID should be appended to the video title, double underscore is fine if the ID starts with one)
 
-Why tho? you may ask.
+Why tho?
 
 **To make sure we all get the same reminders for the same objects.**
 
