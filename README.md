@@ -4,13 +4,13 @@ Universal Probabilistic Daily Reminders for Anything
 https://github.com/TypicalHog/randevu
 
 - OFFLINE - no internet connection required
-- FOSS - in public domain
-- DAILY - reminders are generated each UTC date
-- DETERMINISTIC - reproducible for any object on any date
+- FOSS - unlicensed, in public domain
+- DAILY - reminders are generated on a daily basis (UTC)
+- DETERMINISTIC - easily reproducible for any object and any date
 - PSEUDORANDOM - reminders are spaced randomly and uniformly
 - PROBABILISTIC - reminders are calculated using the probabilistic algorithm
 - UNIVERSAL - reminders for the same object are the same for everyone
-- GENERIC - applicable to anything and everything
+- GENERIC - applicable to anything and everything, literally
 - ADJUSTABLE - frequency of reminders for each object can be adjusted
 
 ---
