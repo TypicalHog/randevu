@@ -15,6 +15,8 @@ https://github.com/TypicalHog/randevu
 
 ---
 
+## How to use
+
 Open "RANDEVU.rdv" in a text editor to add/remove/edit items,
 if it doesn't exist, it will be created on the first run of the program.
 Each line represents one item and should be in the format: "ID N\n"
