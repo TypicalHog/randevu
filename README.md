@@ -28,23 +28,23 @@ Characters outside of this set should only be used for case sensitive external i
 or ones that contain other symbols and characters, like YOUTUBE links.
 
 NAMING EXAMPLES:
->XONOTIC (all letters should be uppercase)
+>**XONOTIC** (all letters should be uppercase)
 >
->THE_MATRIX_1999 (movies should have a year of release at the end)
+>**THE_MATRIX_1999** (movies should have a year of release at the end)
 >
->GRAND_THEFT_AUTO_5 (objects should be referenced by their full name, roman numerals should be replaced with arabic ones)
+>**GRAND_THEFT_AUTO_5** (objects should be referenced by their full name, roman numerals should be replaced with arabic ones)
 >
->ASAP_ROCKY ($ should be replaced with S, same for other similar instances)
+>**ASAP_ROCKY** ($ should be replaced with S, same for other similar instances)
 >
->YEAR_2000 (years should have a YEAR_ prefix)
+>**YEAR_2000** (years should have a YEAR_ prefix)
 >
->2023-08-25 (dates should be ISO 8601, YYYY-MM-DD)
+>**2023-08-25** (dates should be ISO 8601, YYYY-MM-DD)
 >
->NO_MANS_SKY (apostrophe in MAN'S should be dropped)
+>**NO_MANS_SKY** (apostrophe in MAN'S should be dropped)
 >
->GETTING_BANGED_BY_GREEN_BOOMERS_MINECRAFT_BETA_1_7_3_SOLO_SURVIVAL_NO_COMMENTARY_OJzsmWBQE3I (brackets, quotation marks and other punctuation should be dropped, periods in version numbers like 1.7.3 should be replaced with underscores)
+>**GETTING_BANGED_BY_GREEN_BOOMERS_MINECRAFT_BETA_1_7_3_SOLO_SURVIVAL_NO_COMMENTARY_OJzsmWBQE3I** (brackets, quotation marks and other punctuation should be dropped, periods in version numbers like 1.7.3 should be replaced with underscores)
 >
->HARRY_POTTER_SMOKES_WEED_Cdfkq2Nmb3c (video ID should be appended to the video title, double underscore is fine if the ID starts with one)
+>**HARRY_POTTER_SMOKES_WEED_Cdfkq2Nmb3c** (video ID should be appended to the video title, double underscore is fine if the ID starts with one)
 
 WHY THO? YOU MAY ASK.
 
