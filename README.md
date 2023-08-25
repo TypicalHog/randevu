@@ -54,6 +54,7 @@ Even just a single character that's different causes the system to generate comp
 You could append certain items with some extra characters to get completely different and unrelated reminders from other people, if you really wanted that.
 WEED, Weed, WEED1, WEED_ and WEED420 are all treated as different objects.
 Think of the object IDs like passwords. Same password gets you the same reminders as other people.
+NOTE: Naming convention is not set in stone, at least not yet.
 
 N is an integer 0 and up. It represents the desired randevu level.
 N = 5 would mean the user would get reminders for a specific item every 32 (2^5) days, on average.
