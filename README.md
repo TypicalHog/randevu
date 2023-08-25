@@ -27,7 +27,7 @@ Spaces and any other characters should be replaced with a single underscore "_".
 Characters outside of this set should only be used for case sensitive external identifiers,
 or ones that contain other symbols and characters, like YOUTUBE links.
 
-EXAMPLES:
+NAMING EXAMPLES:
 >XONOTIC (all letters should be uppercase)
 >
 >THE_MATRIX_1999 (movies should have a year of release at the end)
