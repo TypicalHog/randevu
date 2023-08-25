@@ -32,6 +32,8 @@ EXAMPLES:
 >
 >ASAP_ROCKY ($ should be replaced with S, same for other similar instances)
 >
+>YEAR_2000 (years should have a YEAR prefix)
+>
 >NO_MANS_SKY (apostrophe in MAN'S should be dropped)
 >
 >HARRY_POTTER_SMOKES_WEED_Cdfkq2Nmb3c (video ID should be appended to the video title, double underscore is fine if the ID starts with one)
