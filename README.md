@@ -36,7 +36,7 @@ NAMING CONVENTION EXAMPLES:
 >
 >**ASAP_ROCKY** ($ should be replaced with S, same for other similar instances)
 >
->**NOTEPADPP** (++ should be replaced with PP)
+>**NOTEPAD_PLUS_PLUS** (++ should be replaced with _PLUS_PLUS)
 >
 >**YEAR_2000** (years should have a YEAR_ prefix)
 >
