@@ -36,6 +36,8 @@ NAMING CONVENTION EXAMPLES:
 >
 >**ASAP_ROCKY** ($ should be replaced with S, same for other similar instances)
 >
+>**NOTEPADPP** (++ should be replaced with PP)
+>
 >**YEAR_2000** (years should have a YEAR_ prefix)
 >
 >**2023-08-25** (dates should be ISO 8601, YYYY-MM-DD)
