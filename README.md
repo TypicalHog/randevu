@@ -78,7 +78,7 @@ Randevu for an item is only shown for items where M >= N.
 ---
 
 X:
->https://twitter.com/randevurdv
+>https://x.com/randevurdv
 
 PROPOSAL:
 >https://www.reddit.com/r/Lightbulb/comments/14eqqa8/universal_daily_deterministic_pseudorandom
