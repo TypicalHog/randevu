@@ -36,7 +36,9 @@ NAMING CONVENTION EXAMPLES:
 >
 >**ASAP_ROCKY** ($ should be replaced with S, same for other similar instances)
 >
->**NOTEPAD_PLUS_PLUS** (++ should be replaced with _PLUS_PLUS)
+>**NOTEPAD_PLUS_PLUS** (++ should be replaced with _PLUS_PLUS, same for C++)
+>
+>**C_SHARP** (# should be replaced with _SHARP)
 >
 >**YEAR_2000** (years should have a YEAR_ prefix)
 >
@@ -50,7 +52,7 @@ NAMING CONVENTION EXAMPLES:
 
 WHY THO? YOU MAY ASK.
 
-**TO MAKE SURE WE ALL GET THE SAME REMINDERS FOR THE SAME OBJECTS.**
+**TO MAKE SURE WE ALL GET THE SAME REMINDERS FOR THE SAME THINGS.**
 
 Even just a single character that's different causes the system to generate completely different reminders.
 You could append certain items with some extra characters to get completely different and unrelated reminders from other people, if you really wanted that.
