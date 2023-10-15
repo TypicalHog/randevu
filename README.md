@@ -74,7 +74,7 @@ reminders. For example: randevu 4 is on the same days as 3, 2, 1, 0. (for the sa
 
 Randevus are shown to the user in the format:
 "ID M/N" where M is the highest randevu for a certain item
-on a given day and N is a user set number loaded from the file
+on a given day and N is a user set number loaded from the file "RANDEVU.rdv".
 Randevu for an item is only shown for items where M >= N.
 
 ---
