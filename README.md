@@ -49,6 +49,8 @@ NAMING CONVENTION EXAMPLES:
 >**GETTING_BANGED_BY_GREEN_BOOMERS_MINECRAFT_BETA_1_7_3_SOLO_SURVIVAL_NO_COMMENTARY_OJzsmWBQE3I** (brackets, quotation marks, colons and other punctuation should be dropped, periods in version numbers like 1.7.3 should be replaced with underscores)
 >
 >**HARRY_POTTER_SMOKES_WEED_Cdfkq2Nmb3c** (video ID should be appended to the video title, double underscore is fine if the ID starts with one)
+>
+>**NUMBER_420** (numbers should have a NUMBER_ prefix)
 
 WHY THO? YOU MAY ASK.
 
