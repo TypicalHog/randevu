@@ -1,15 +1,15 @@
 [package]
 name = "randevu"
-version = "1.0.1"
+version = "1.0.2"
 authors = ["TypicalHog"]
 edition = "2021"
 description = "The official Rust implementation of the RANDEVU algorithm"
 readme = "README.md"
 repository = "https://github.com/TypicalHog/randevu"
 license = "Unlicense OR MIT OR Apache-2.0"
-keywords = ["randevu", "rdv", "blake3", "reminder", "universal"]
+keywords = ["randevu", "rdv", "global", "reminder", "blake3"]
 categories = ["algorithms", "date-and-time"]
 
 [dependencies]
 blake3 = "1.5.0"
-chrono = "0.4.33"
+chrono = "0.4.34"

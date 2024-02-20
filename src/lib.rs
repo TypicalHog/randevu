@@ -14,11 +14,11 @@
 //! ```
 
 use blake3;
-use chrono::{Duration, Utc};
+use chrono::{TimeDelta, Utc};
 
 /// Returns current UTC DATE `String` in ISO 8601 format (YYYY-MM-DD), with an OFFSET `i64` in days
 pub fn utc_date_with_offset(offset: i64) -> String {
-    (Utc::now() + Duration::days(offset))
+    (Utc::now() + TimeDelta::days(offset))
         .format("%Y-%m-%d")
         .to_string()
 }
