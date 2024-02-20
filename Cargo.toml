@@ -1,6 +1,6 @@
 [package]
 name = "randevu"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["TypicalHog"]
 edition = "2021"
 description = "The official Rust implementation of the RANDEVU algorithm"
