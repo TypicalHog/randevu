@@ -1,6 +1,6 @@
 [package]
 name = "randevu"
-version = "1.0.2"
+version = "2.0.0"
 authors = ["TypicalHog"]
 edition = "2021"
 description = "The official Rust implementation of the RANDEVU algorithm"
@@ -11,5 +11,6 @@ keywords = ["randevu", "rdv", "global", "reminder", "blake3"]
 categories = ["algorithms", "date-and-time"]
 
 [dependencies]
-blake3 = "1.5.0"
-chrono = "0.4.34"
+blake3 = "1.5.1"
+chrono = "0.4.37"
+itoa = "1.0.11"
