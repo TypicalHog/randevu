@@ -72,7 +72,7 @@ reminder for a certain OBJECT on a specific DATE
 
 **(New feature of version 2.0)**  
 - RDVT - one of an infinite number of random moments in a day (0-24h UTC) when
-an object has its reminders for that day, allows for infinite precission  
+an object has its reminders for that day, allows for infinite precision  
 - RANK - RDVT rank, ranked 0 (most significant) to infinity - RDVT0, RDVT1...  
 
 ## RDV CALCULATION

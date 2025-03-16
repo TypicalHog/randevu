@@ -5,19 +5,15 @@
 //! use chrono::Utc;
 //! use randevu::{rdv, rdvt};
 //!
-//! fn main() {
-//!     let object = "THE_SIMPSONS";
-//!     let date = Utc::now();
-//!     let rdv = rdv(object, &date);
-//!     let rdvt = rdvt(0, object, &date);
+//! let object = "THE_SIMPSONS";
+//! let date = Utc::now();
+//! let rdv = rdv(object, &date);
+//! let rdvt = rdvt(0, object, &date);
 //!
-//!     println!("Object {} has RDV{} today with RDVT0 at {:?}", object, rdv, rdvt);
-//! }
+//! println!("Object {} has RDV{} today with RDVT0 at {:?}", object, rdv, rdvt);
 //! ```
 
-use blake3;
 use chrono::{DateTime, Datelike, NaiveTime, TimeDelta, Utc};
-use itoa;
 
 /// Returns the 32-byte KEY `[u8; 32]` created from a given DATE `&DateTime<Utc>` and an optional RANK `Option<u32>`
 fn create_key(date: &DateTime<Utc>, rank: Option<u32>) -> [u8; 32] {
@@ -52,7 +48,7 @@ fn create_key(date: &DateTime<Utc>, rank: Option<u32>) -> [u8; 32] {
     let full_year_len = prefix_len + year_len;
 
     // If a rank is provided, write it into the key after the date, separated by an '_'
-    if rank != None {
+    if rank.is_some() {
         let mut buffer = itoa::Buffer::new();
         let rank_str = buffer.format(rank.unwrap());
         key[7 + full_year_len..7 + full_year_len + rank_str.len()]
@@ -124,10 +120,8 @@ pub fn rdvt(rank: u32, object: &str, date: &DateTime<Utc>) -> DateTime<Utc> {
         }
     }
 
-    // Construct the RDVT time from total
-    let rdvt = date.with_time(NaiveTime::MIN).unwrap() + TimeDelta::nanoseconds(total as i64);
-
-    rdvt
+    // Construct the RDVT time from total and return it
+    date.with_time(NaiveTime::MIN).unwrap() + TimeDelta::nanoseconds(total as i64)
 }
 
 #[cfg(test)]
